@@ -400,7 +400,9 @@ text-decoration: none;
     fill: var(--icon-orignal-color);
     border: 1px solid var(--icon-orignal-color);
     border-radius: 4px;
-    transition: background-color, fill var(--transform);
+    transition:
+    fill var(--transform),
+    border var(--transform);
 }
 .clients .link:hover,
 .clients .link:focus{
@@ -514,7 +516,8 @@ margin-right: 0px;
     letter-spacing: 0.03em;
     cursor: pointer;
     transition: background-color var(--transform), 
-    color var(--transform);
+    color var(--transform),
+    box-shadow var(--transform);
 
 }
 .active-btn:hover,
@@ -561,7 +564,6 @@ margin-right: 0px;
 .work-overlay,
 .work .link:focus
 .work-overlay {
-   /* opacity: 1; */
    transform: translatey(0);
 
 }
@@ -570,7 +572,6 @@ margin-right: 0px;
     position: absolute;
     top: 0;
     left: 0;
-    /* opacity: 0; */
     width: 100%;
     height: 100%;
     background: var(--card-background-color);
